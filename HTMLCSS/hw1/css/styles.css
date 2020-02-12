@@ -1,0 +1,70 @@
+.getStarted {
+	width: 1280px;
+	height: auto;
+	background-color: #f5f6f7;
+}
+
+.header-navBar {
+	text-align: center;
+	margin: 0px;
+}
+
+.header-item {
+	display: inline-block;
+	padding: 20px;
+	margin-right: 50px;
+}
+
+.header-item a {
+	font-family: AdobeInvisFont, Roboto-Black, Courier;
+	font-size: 18px;
+	color: #54b9a6;
+	text-align: left;
+	text-decoration: solid;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.image {
+	background-image: url(../assets/hw1-02.png);
+	width: 1280px;
+	height: 790px;
+}
+
+.content-title {
+	font-family: AdobeInvisFont, Roboto-Black, Courier;
+	font-size: 22pt;
+	color: rgba(55, 55, 55, 255);
+
+	text-align: center;
+}
+
+.content p {
+	font-family: AdobeInvisFont, Roboto-Black, Courier;
+	font-size: 16pt;
+
+	color: rgba(55, 55, 55, 255);
+	text-align: center;
+}
+button {
+	width: 250px;
+	height: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #16a085;
+	color: white;
+	text-transform: uppercase;
+}
+
+.footer span {
+	font-family: AdobeInvisFont, Roboto-Black, Courier;
+	font-size: 16pt;
+	color: rgba(55, 55, 55, 255);
+	padding-right: 100px;
+	text-decoration: solid;
+}
+.footer {
+	text-align: right;
+	background-color: white;
+}
