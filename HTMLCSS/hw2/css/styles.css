@@ -83,6 +83,7 @@
 	border: 1px solid black;
 	width: 344px;
 	height: 399px;
+	margin-right: 45px;
 }
 
 .content-content {
@@ -90,19 +91,21 @@
 	vertical-align: top;
 	width: 885px;
 	align-content: center;
-	margin-left: 40px;
-	margin-right: 0px;
+	/* margin-left: 40px; */
+	margin-right: -30px;
 	display: inline-block;
 }
 
 .content-content__image {
 	background-image: url(../assets/01.png);
-	width: 850px;
+	width: 885px;
 	height: 529px;
 	background-repeat: no-repeat;
 	background-position: center;
 	border: 1px solid black;
-	float: right;
+	margin: 0px;
+	padding: 0px;
+	/* float: right; */
 }
 
 .content-content__description {
