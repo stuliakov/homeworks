@@ -1,6 +1,7 @@
 .ramda {
 	width: 1280px;
-	margin: 100px 60px;
+	margin: 0px auto;
+	border: 1px solid black;
 }
 
 .header-title {
@@ -73,7 +74,7 @@
 .content-menu {
 	display: inline-block;
 	border: 1px solid black;
-	width: 344px;
+	width: 342px;
 	height: 399px;
 	margin-right: 45px;
 }
