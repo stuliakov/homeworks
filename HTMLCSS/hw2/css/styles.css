@@ -1,12 +1,17 @@
+.wrap {
+	width: 1480px;
+	border: 1px solid black;
+	margin: 0px auto;
+}
+
 .ramda {
 	width: 1280px;
 	margin: 0px auto;
-	border: 1px solid black;
 }
 
 .header-title {
-	margin: 60px 0px 0px 100px;
-	font-family: AdobeInvisFont, Courier, MyriadPro-Regular;
+	margin: 61px auto 45px 0px;
+	font-family: AdobeInvisFont, Courier, MyriadPro-Regular, sans-serif;
 	font-size: 50pt;
 	color: rgba(0, 0, 0, 255);
 }
@@ -33,7 +38,7 @@
 .header-navBar__link {
 	text-decoration: none;
 	color: white;
-	font-family: AdobeInvisFont, Courier, MyriadPro-Regular;
+	font-family: AdobeInvisFont, Courier, MyriadPro-Regular, sans-serif;
 	font-size: 16pt;
 	color: rgba(255, 255, 255, 255);
 	text-align: left;
@@ -42,6 +47,7 @@
 .content-menu__list {
 	list-style: none;
 	padding-left: 0px;
+	width: 100%;
 	display: inline-block;
 }
 
@@ -58,13 +64,15 @@
 
 .content-menu__item:hover .content-menu_link {
 	background-color: #dbdbdb;
-	padding: 0px 0px 0px 68px;
+	display: block;
+	/* padding: 0px 0px 0px 68px; */
+	margin-left: 30px;
 	color: black;
 }
 
 .content-menu_link {
 	padding: 0px 40px;
-	font-family: AdobeInvisFont, Courier, MyriadPro-Regular;
+	font-family: AdobeInvisFont, Courier, MyriadPro-Regular, sans-serif;
 	font-size: 16pt;
 	color: #495863;
 	text-align: left;
@@ -77,6 +85,7 @@
 	width: 342px;
 	height: 399px;
 	margin-right: 45px;
+	background-color: #fff;
 }
 
 .content-content {
@@ -84,7 +93,6 @@
 	vertical-align: top;
 	width: 885px;
 	align-content: center;
-	margin-right: -30px;
 	display: inline-block;
 }
 
@@ -101,7 +109,7 @@
 
 .content-content__description {
 	padding: 30px;
-	font-family: AdobeInvisFont, Courier, MyriadPro-Regular;
+	font-family: AdobeInvisFont, Courier, MyriadPro-Regular, sans-serif;
 	font-size: 14pt;
 	color: rgba(44, 44, 44, 255);
 	text-align: left;
@@ -125,7 +133,7 @@
 }
 
 .footer-item a {
-	font-family: AdobeInvisFont, Courier, MyriadPro-Regular;
+	font-family: AdobeInvisFont, Courier, MyriadPro-Regular, sans-serif;
 	font-size: 16pt;
 	color: rgba(12, 25, 39, 255);
 	text-align: left;
@@ -138,9 +146,13 @@
 }
 
 .footer__copy-span {
-	font-family: AdobeInvisFont, Courier, MyriadPro-Regular;
+	font-family: AdobeInvisFont, Courier, MyriadPro-Regular, sans-serif;
 	font-size: 15pt;
 	color: rgba(1, 1, 1, 255);
 	text-align: right;
 	margin-left: 200px;
+}
+
+a {
+	text-decoration: none;
 }
