@@ -1,32 +1,21 @@
 .milan {
-	width: 1366px;
-	margin: 0px 265px;
-	/* margin: 0px auto; */
-
-	position: absolute;
+	margin: 0px auto;
+	max-width: 1366px;
 }
 
 .back {
 	background-image: url(../assets/milan_bg.jpg);
 	background-repeat: no-repeat;
-
 	background-size: cover;
-	z-index: 1;
-	height: 750px;
-	width: 100%;
+	height: 800px;
+	width: 1366px;
 	position: absolute;
 	z-index: -1;
-	filter: blur(5px);
+	filter: blur(3px);
 }
 
-.bg {
-	filter: blur(2px);
-	width: 1366px;
-	background-repeat: none;
-	height: 750px;
-	float: none;
-	position: absolute;
-	z-index: 4;
+.header {
+	padding: 50px 150px;
 }
 
 .milan-link {
@@ -38,7 +27,6 @@ a {
 }
 .logo__holidays {
 	position: relative;
-	bottom: 10px;
 }
 
 .logo__holidays > span {
@@ -54,28 +42,22 @@ a {
 }
 
 .logo {
-	margin-top: 60px;
-	margin-left: 150px;
-	position: relative;
+	height: max-content;
 }
 .logo__title {
 	width: 104px;
 	height: 44px;
 	float: left;
-	position: relative;
 	margin-left: 15px;
 }
 
 .logo__milan {
-	position: relative;
-	size: content;
 }
 
 .logo__ic {
 	background-image: url(../assets/logo.png);
 	width: 46px;
 	height: 44px;
-	position: relative;
 	float: left;
 }
 
@@ -96,36 +78,32 @@ a {
 }
 
 .contacts {
-	filter: blur(0px);
+	margin-top: 10px;
 	float: right;
-	margin-top: 60px;
-	margin-right: 150px;
-	position: relative;
-	z-index: 6;
 }
 
 .contacts span {
 	display: block;
 	color: white;
-	font-family: AdobeInvisFont, Courier, Verdana, sans-serif;
+	font-family: AdobeInvisFont, Verdana, Courier, sans-serif;
 	font-size: 13pt;
 	text-align: right;
 }
 
 .content {
-	size: content;
-	position: relative;
-	margin: 140px auto 60px auto;
-	width: 1070px;
-	height: 504px;
+	margin: 0px 150px;
 }
 
 .content__items {
 	width: 305px;
 	height: 200px;
 	float: left;
-	margin-right: 69px;
-	margin-bottom: 60px;
+	margin-right: 70px;
+	margin-bottom: 100px;
+}
+
+.content__items:nth-child(3n) {
+	margin-right: 0px;
 }
 
 .content__items:hover .content__title {
@@ -138,54 +116,13 @@ a {
 	border-top: 2px solid white;
 }
 
-.content__items:nth-child(3n) {
-	margin-right: 0px;
-}
-
-.clear {
-	clear: both;
-}
-
-.content__item1 {
-	src: url(../assets/01.png);
-	position: relative;
-}
-
-.content__item2 {
-	src: url(../assets/02.png);
-}
-
-.content__item3 {
-	src: url(../assets/03.png);
-}
-
-.content__item4 {
-	src: url(../assets/04.png);
-}
-
-.content__item5 {
-	src: url(../assets/05.png);
-}
-
-.content__item6 {
-	src: url(../assets/06.png);
-}
-
 .content__title {
-	font-family: AdobeInvisFont, Courier, Verdana, sans-serif;
+	font-family: AdobeInvisFont, Verdana, Courier, sans-serif;
 	font-size: 13pt;
 	color: white;
 	display: block;
 	text-align: center;
 	font-weight: 540;
-}
-
-.footer__text {
-	font-family: AdobeInvisFont, Courier, Verdana, sans-serif;
-	font-size: 12pt;
-	color: white;
-	display: block;
-	text-align: center;
 }
 
 .content__pop-up {
@@ -218,7 +155,7 @@ a {
 
 .content__from {
 	display: block;
-	font-family: AdobeInvisFont, Courier, Verdana, sans-serif;
+	font-family: AdobeInvisFont, Verdana, Courier, sans-serif;
 	font-size: 12pt;
 	color: rgba(255, 255, 255, 255);
 	text-align: left;
@@ -226,7 +163,7 @@ a {
 
 .content__price {
 	display: inline-block;
-	font-family: AdobeInvisFont, Courier, Verdana;
+	font-family: AdobeInvisFont, Verdana, Courier, sans-serif;
 	font-size: 18pt;
 	color: rgba(255, 255, 255, 255);
 	text-align: left;
@@ -236,7 +173,7 @@ a {
 	position: relative;
 	float: right;
 	text-align: right;
-	font-family: AdobeInvisFont, Courier, Verdana, sans-serif;
+	font-family: AdobeInvisFont, Verdana, Courier, sans-serif;
 	font-size: 12pt;
 	color: rgba(255, 255, 255, 255);
 	top: 35px;
@@ -251,5 +188,28 @@ a {
 }
 
 .footer__text {
+	font-family: AdobeInvisFont, Verdana, Courier, sans-serif;
+	font-size: 12pt;
+	color: white;
+	display: block;
+	text-align: center;
 	margin-bottom: 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+@font-face {
+	font-family: "Verdana-Bold";
+	src: url("../assets/Verdana-Bold.ttf") format("truetype");
+	font-style: bol;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Verdana";
+	src: url("../assets/Verdana.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
 }
