@@ -15,7 +15,7 @@
 }
 
 .header {
-	padding: 50px 150px;
+	padding: 50px 0px;
 }
 
 .milan-link {
@@ -51,13 +51,11 @@ a {
 	margin-left: 15px;
 }
 
-.logo__milan {
-}
-
 .logo__ic {
 	background-image: url(../assets/logo.png);
 	width: 46px;
 	height: 44px;
+	position: relative;
 	float: left;
 }
 
@@ -90,8 +88,12 @@ a {
 	text-align: right;
 }
 
+.content_margin {
+	width: 1065px;
+	margin: 0px auto;
+}
 .content {
-	margin: 0px 150px;
+	margin: 0px auto;
 }
 
 .content__items {
