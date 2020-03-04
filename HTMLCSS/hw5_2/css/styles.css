@@ -1,0 +1,177 @@
+table {
+	border-collapse: collapse;
+	text-transform: uppercase;
+	border: 24px solid #3a4965;
+	margin: 0px auto;
+}
+#header__choose-your,
+#header__pricing-plan {
+	display: block;
+	width: 100%;
+	margin: 0px auto;
+}
+i {
+	display: block;
+	margin: 0px auto;
+	color: #777;
+}
+tr,
+th,
+td {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+#title-cell {
+	width: 198px;
+	height: 113px;
+}
+
+#header__choose-your {
+	font-family: AdobeInvisFont, Arimo-Bold, Courier, sans-serif;
+	font-size: 12pt;
+	color: rgba(72, 72, 72, 255);
+	text-align: center;
+}
+
+#header__pricing-plan {
+	font-family: AdobeInvisFont, Arimo-Bold, Courier, sans-serif;
+	font-size: 18pt;
+	color: rgba(72, 72, 72, 255);
+	text-align: center;
+}
+
+.text {
+	width: 157px;
+	height: 166px;
+	text-align: center;
+	font-family: AdobeInvisFont, Arimo, Courier, sans-serif;
+	font-size: 14pt;
+	color: rgba(72, 72, 72, 255);
+	text-align: center;
+}
+
+.column1 {
+	width: 198px;
+	height: 167px;
+	text-align: center;
+}
+
+th {
+	color: #333;
+	text-align: center;
+}
+
+th:not(:first-child) {
+	width: 157px;
+	height: 112px;
+	font-family: FontAwesome, Arimo-Bold, AdobeInvisFont, MyriadPro-Regular, sans-serif;
+	font-size: 18pt;
+	text-align: center;
+	color: #333;
+}
+
+button {
+	display: block;
+	width: 144px;
+	height: 41px;
+	border-radius: 7px;
+	border-style: none;
+	margin: 0px auto;
+	font-family: AdobeInvisFont, Arimo-Bold, Courier, sans-serif;
+	font-size: 14pt;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.buy-now-button {
+	background-color: #484848;
+	box-shadow: 0 9px #404040;
+	transition: all 0.1s linear;
+}
+.buy-now-button:hover {
+	background-color: #2c2b2b;
+	box-shadow: 0 9px #181818;
+}
+.buy-now-button:active {
+	background-color: #181818;
+	box-shadow: 0 5px #050505;
+	transform: translateY(4px);
+}
+
+.column-darker {
+	background-color: #e3e3e3;
+}
+.column-lighter {
+	background-color: #f2f2f2;
+}
+
+.tarif-title {
+	font-family: AdobeInvisFont, Arimo-Bold, Courier, sans-serif;
+	font-size: 20pt;
+	color: rgba(255, 255, 255, 255);
+	text-align: center;
+}
+
+.cents {
+	font-family: AdobeInvisFont, Arimo-Bold, Courier, sans-serif;
+	font-size: 16pt;
+	color: white;
+	text-align: center;
+	vertical-align: top;
+}
+
+.inline {
+	display: inline-block;
+}
+.dollars {
+	font-family: AdobeInvisFont, Arimo, Courier, sans-serif;
+	font-size: 30pt;
+	color: white;
+	text-align: center;
+}
+.per-month {
+	font-family: AdobeInvisFont, Arimo, Courier, sans-serif;
+	font-size: 10pt;
+	color: white;
+	text-align: left;
+	/* height: 50%; */
+	font-weight: 600;
+	display: inline-block;
+}
+
+#header__standart {
+	background-color: #89c331;
+}
+#header__ultimate {
+	background-color: #f04a56;
+}
+#header__premium {
+	background-color: #20807c;
+}
+
+.display-block {
+	display: block;
+}
+/* arimo-regular*/
+@font-face {
+	font-family: 'Arimo';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/Arimo.eot'); /* IE9 Compat Modes*/
+	src: local('Arimo Regular'), local('Arimo-Regular'), url('../fonts/Arimo.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Arimo.woff2') format('woff2'), url('../fonts/Arimo.woff') format('woff'),
+		url('../fonts/Arimo.ttf') format('truetype'), url('../fonts/Arimo.svg#Arimo') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Arimo-Bold';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/Arimo.eot'); /* IE9 Compat Modes */
+	src: local('Arimo Bold'), local('Arimo-Bold'), url('../fonts/Arimo-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Arimo-Bold.woff2') format('woff2'), url('../fonts/Arimo-Bold.woff') format('woff'),
+		url('../fonts/Arimo-Bold.ttf') format('truetype'), url('../fonts/Arimo-Bold.svg#Arimo') format('svg'); /* Legacy iOS */
+}

@@ -1,0 +1,210 @@
+table {
+	border-collapse: collapse;
+	text-transform: uppercase;
+	border: 24px solid #3a4965;
+	margin: 0px auto;
+}
+
+#header__choose-your,
+#header__pricing-plan {
+	display: block;
+	width: 100%;
+	margin: 0px auto;
+}
+
+#header__choose-your {
+	font-family: AdobeInvisFont, Arimo, Courier, sans-serif;
+	font-size: 16pt;
+	color: rgba(72, 72, 72, 255);
+	text-align: center;
+	font-weight: bold;
+}
+
+#header__pricing-plan {
+	font-family: AdobeInvisFont, Arimo, Courier, sans-serif;
+	font-size: 28pt;
+	color: rgba(72, 72, 72, 255);
+	text-align: center;
+	font-weight: bold;
+}
+
+.column1 {
+	width: 310px;
+	height: 69px;
+	text-align: center;
+}
+
+.text {
+	width: 280px;
+	height: 69px;
+	text-align: center;
+	font-family: AdobeInvisFont, Arimo, Courier, sans-serif;
+	font-size: 14pt;
+	color: rgba(72, 72, 72, 255);
+	text-align: center;
+}
+
+.prices {
+	height: 86px;
+}
+.display-block {
+	display: block;
+}
+
+.dollars {
+	font-family: AdobeInvisFont, Arimo, Courier, sans-serif;
+	font-size: 55pt;
+	color: rgba(72, 72, 72, 255);
+	text-align: left;
+	height: 100%;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.cents {
+	font-family: AdobeInvisFont, Arimo, Courier, sans-serif;
+	font-size: 22pt;
+	color: rgba(72, 72, 72, 255);
+	text-align: left;
+	height: 50%;
+	/* display: inline-block; */
+	font-weight: bold;
+}
+
+.per-month {
+	font-family: AdobeInvisFont, Arimo, Courier, sans-serif;
+	font-size: 16pt;
+	color: rgba(72, 72, 72, 255);
+	text-align: left;
+	height: 50%;
+	font-weight: 500;
+	/* display: inline-block; */
+}
+
+#header__standart,
+#header__ultimate,
+#header__premium {
+	height: 70px;
+	font-family: AdobeInvisFont, Arimo, Courier, sans-serif;
+	font-size: 22pt;
+	color: rgba(255, 255, 255, 255);
+	text-align: center;
+	font-weight: bold;
+}
+.column-darker {
+	background-color: #e3e3e3;
+}
+.column-lighter {
+	background-color: #f2f2f2;
+}
+
+#header__standart {
+	background-color: #89c331;
+}
+#header__ultimate {
+	background-color: #f04a56;
+}
+#header__premium {
+	background-color: #20807c;
+}
+button {
+	display: block;
+	width: 192px;
+	height: 49px;
+	border-radius: 7px;
+	border-style: none;
+	margin: 0px auto;
+	font-family: AdobeInvisFont, Arimo, Courier, sans-serif;
+	font-size: 14pt;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.contact-us-button {
+	background-color: #484848;
+	box-shadow: 0 9px #404040;
+	transition: all 0.1s linear;
+}
+.contact-us-button:hover {
+	background-color: #2c2b2b;
+	box-shadow: 0 9px #181818;
+}
+.contact-us-button:active {
+	background-color: #181818;
+	box-shadow: 0 5px #050505;
+	transform: translateY(4px);
+}
+
+.buy-now__green {
+	background-color: #89c331;
+	box-shadow: 0 9px #79b027;
+	transition: all 0.1s linear;
+}
+.buy-now__green:hover {
+	background-color: #02a308;
+	box-shadow: 0 9px #4a7a02;
+}
+.buy-now__green:active {
+	background-color: #4a7a02;
+	box-shadow: 0 5px #375b01;
+	transform: translateY(4px);
+}
+
+.buy-now__red {
+	background-color: #f04a56;
+	box-shadow: 0 9px #df3a46;
+	transition: all 0.1s linear;
+}
+.buy-now__red:hover {
+	background-color: #92252d;
+	box-shadow: 0 9px #641a1f;
+}
+.buy-now__red:active {
+	background-color: #641a1f;
+	box-shadow: 0 5px #3d1013;
+	transform: translateY(4px);
+}
+
+.buy-now__bluegreen {
+	background-color: #20807c;
+	box-shadow: 0 9px #16736f;
+	transition: all 0.1s linear;
+}
+.buy-now__bluegreen:hover {
+	background-color: #16736f;
+	box-shadow: 0 9px #0e4946;
+}
+.buy-now__bluegreen:active {
+	background-color: #0e4946;
+	box-shadow: 0 5px #092e2c;
+	transform: translateY(4px);
+}
+
+i {
+	margin-right: 10px;
+	color: #777;
+}
+
+/* td {
+	-webkit-box-shadow: inset -32px 0px 14px -32px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset -32px 0px 14px -32px rgba(0, 0, 0, 0.75);
+	box-shadow: inset -32px 0px 14px -32px rgba(0, 0, 0, 0.75);
+} */
+
+tr td:not(:last-child) {
+	-webkit-box-shadow: inset -32px 0px 14px -35px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset -32px 0px 14px -35px rgba(0, 0, 0, 0.75);
+	box-shadow: inset -32px 0px 14px -35px rgba(0, 0, 0, 0.75);
+}
+
+tr th:not(:last-child) {
+	-webkit-box-shadow: inset -32px 0px 14px -35px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset -32px 0px 14px -35px rgba(0, 0, 0, 0.75);
+	box-shadow: inset -32px 0px 14px -35px rgba(0, 0, 0, 0.75);
+}
+
+.inline-block {
+	display: inline-block;
+}
