@@ -1,7 +1,7 @@
 let name = '';
 do {
 	name = prompt('Please, enter your name', [ name ]);
-} while (name == '');
+} while (name == '' || name.match(/(\d+)/));
 
 let age = '';
 while (age == '' || isNaN(age)) {
