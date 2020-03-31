@@ -12,8 +12,8 @@ if (num1 < 5) {
 	}
 }
 
-let m = prompt('Enter first number');
-let n = prompt('Enter second number');
+let m = '';
+let n = '';
 
 do {
 	m = prompt('Enter first number');
