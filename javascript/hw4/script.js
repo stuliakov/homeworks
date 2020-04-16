@@ -1,41 +1,36 @@
-const newUser = {};
 function createNewUser() {
 	let readFirstName = prompt('Enter firstname, please');
 	let readLastName = prompt('Enter lastname, please');
+	const newUser = {};
 	Object.defineProperty(newUser, 'firstName', {
-		value: readFirstName,
 		enumerable: true,
-		writable: false,
-		get firstName() {
-			return this.firstName;
+		configurable: false,
+		get: function() {
+			return readFirstName;
 		},
-		set firstName(newFirstName) {
-			this.firstName = newFirstName;
+		set: function(newValue) {
+			readFirstName = newValue;
 		}
 	});
 	Object.defineProperty(newUser, 'lastName', {
-		value: readLastName,
 		enumerable: true,
-		writable: false,
-		get lastName() {
-			return this.lastName;
+		configurable: false,
+		get: function() {
+			return readLastName;
 		},
-		set lastName(newLastName) {
-			this.lastName = newLastName;
+		set: function(newValue) {
+			readLastName = newValue;
 		}
 	});
-	let getLogin = function() {
-		let some = newUser.firstName[0] + newUser.lastName;
-		return some.toLowerCase();
-	};
 	Object.defineProperty(newUser, 'getLogin', {
-		value: getLogin().valueOf(),
 		enumerable: true,
-		get getLogin() {
-			return this.getLogin;
+		configurable: false,
+		get: function() {
+			let some = this.firstName[0] + this.lastName;
+			return some.toLowerCase();
 		}
 	});
 	return newUser;
 }
-createNewUser();
+const newUser = createNewUser();
 console.log(newUser.getLogin);
