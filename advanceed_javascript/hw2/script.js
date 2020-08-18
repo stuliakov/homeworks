@@ -1,4 +1,5 @@
 const root = document.getElementById('root');
+const ul = document.createElement('ul');
 
 const books = [
 	{
@@ -31,17 +32,25 @@ const books = [
 ];
 
 books.forEach((elem) => {
-	renderListItem(Object.keys(elem), Object.values(elem));
+	let diff = [ 'author', 'name', 'price' ].filter((x) => Object.keys(elem).indexOf(x) == -1);
+
+	try {
+		if (!diff.length == 0) {
+			throw new Error();
+		} else {
+			renderListItem(Object.keys(elem), Object.values(elem), ul);
+		}
+	} catch (e) {
+		console.error('Field with key:', ...diff, 'not found');
+	}
 });
 
-function renderListItem(keysSet, valuesSet) {
-	if (keysSet.length >= 3 && valuesSet.length >= 3) {
-		let ul = document.createElement('ul');
-		for (let i = 0; i < keysSet.length; i++) {
-			let li = document.createElement('li');
-			li.innerHTML = keysSet[i] + ': ' + valuesSet[i];
-			ul.appendChild(li);
-		}
-		root.appendChild(ul);
+function renderListItem(keysSet, valuesSet, ul) {
+	for (let i = 0; i < keysSet.length; i++) {
+		let li = document.createElement('li');
+		li.innerHTML = keysSet[i] + ': ' + valuesSet[i];
+		ul.appendChild(li);
 	}
 }
+
+root.appendChild(ul);
