@@ -9,7 +9,7 @@ button.onclick = () => {
 function findByIp(ip) {
 	fetch(`http://ip-api.com/json/${ip}?fields=message,continent,country,regionName,city,district`)
 		.then((response) => response.json())
-		.then((json) => renderData(Object.keys(json), Object.values(json), json));
+		.then((json) => renderData(json));
 }
 
 function renderData(object) {
