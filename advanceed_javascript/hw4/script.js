@@ -12,11 +12,12 @@ function findByIp(ip) {
 		.then((json) => renderData(Object.keys(json), Object.values(json), json));
 }
 
-function renderData(keys, values, object) {
+function renderData(object) {
 	const ul = document.createElement('ul');
 
 	for (const key in object) {
 		const li = document.createElement('li');
+
 
 			object[key] === '' ? (li.innerText = `${key}: field is empty`) :
 			(li.innerText = `${key}: ${object[key]}`);
